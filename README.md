@@ -1,5 +1,5 @@
 Learning JavaScript by building a game project
-- Beginner-level approach
+( Beginner-level approach)
   1. Rock-Paper-Scissors 15/01/2024
 
 JavaScript Methods used in this project
