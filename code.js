@@ -8,8 +8,8 @@ let result
 
 //captures user event clicks from possibleChoices
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userPick = e.target.id 
-    userPickOutput.innerHTML = userPick//updates user's hoice in the interface
+    userPick = e.target.id // This extracts the id property of the clicked element and assigns it to the variable userPick
+    userPickOutput.innerHTML = userPick//updates user's choice in the interface
     generateComputerChoice() //generate comp choice function
     getResult() //return results function
 }))
@@ -54,4 +54,6 @@ function getResult() {
     }
 
     resultOutput.innerHTML = result
+
 }
+
