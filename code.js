@@ -11,7 +11,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     userPick = e.target.id 
     userPickOutput.innerHTML = userPick//updates user's hoice in the interface
     generateComputerChoice() //generate comp choice function
-    getResult()
+    getResult() //return results function
 }))
 
 function generateComputerChoice() {
@@ -26,6 +26,32 @@ function generateComputerChoice() {
     if (randomNumber === 3) {
         computerPick = 'paper'
     }
-    
+
     computerPickOutput.innerHTML = computerPick
+}
+
+function getResult() {
+    if (computerPick === userPick) {
+        result = 'Its a draw!'
+    }
+    if (computerPick === 'rock' && userPick === 'paper') {
+        result = 'you win!'
+    }
+    if (computerPick === 'rock' && userPick === 'scissors') {
+        result = 'you lose!'
+    }
+    if (computerPick === 'paper' && userPick === 'rock') {
+        result = 'you lose!'
+    }
+    if (computerPick === 'paper' && userPick === 'scissors') {
+        result = 'you win!'
+    }
+    if (computerPick === 'scissors' && userPick === 'rock') {
+        result = 'you win!'
+    }
+    if (computerPick === 'scissors' && userPick === 'paper') {
+        result = 'you lose!'
+    }
+
+    resultOutput.innerHTML = result
 }
