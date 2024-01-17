@@ -1,3 +1,4 @@
+//interact with the Document Object Model (DOM) to retrieve the HTML element with the ID
 const computerPickOutput = document.getElementById('computer-choice')
 const userPickOutput = document.getElementById('user-choice')
 const resultOutput = document.getElementById('result')
