@@ -12,7 +12,7 @@ let result
 -> When a user clicks on one of these elements, the provided arrow function is executed.*/
 /*(e) => { ... } an arrow function serving as the event handler. 
 The function is executed when the specified event ('click' in this instance) occurs*/
-
+//The 'e' parameter represents the event object, which contains information about the event, such as the target element and other details.
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userPick = e.target.id // This extracts the id property of the clicked element/button and assigns it to the variable userPick
     userPickOutput.innerHTML = userPick//updates user's choice in the interface

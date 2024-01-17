@@ -1,5 +1,5 @@
 Learning JavaScript by building a game project
-( Beginner-level approach)
+( Beginner)
 
 Tech: HTML, JavaScript
   1. Rock-Paper-Scissors 15/01/2024
