@@ -6,9 +6,15 @@ let userPick
 let computerPick 
 let result
 
-//captures user event clicks from possibleChoices
+//Event handling - captures user event clicks from possibleChoices
+//.forEach iterates over each element/button in the array as a perimeter
+/*.addEventListener('click', (e) => { ... })This code adds a click event listener to each element/button in possibleChoices.
+-> When a user clicks on one of these elements, the provided arrow function is executed.*/
+/*(e) => { ... } an arrow function serving as the event handler. 
+The function is executed when the specified event ('click' in this instance) occurs*/
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userPick = e.target.id // This extracts the id property of the clicked element and assigns it to the variable userPick
+    userPick = e.target.id // This extracts the id property of the clicked element/button and assigns it to the variable userPick
     userPickOutput.innerHTML = userPick//updates user's choice in the interface
     generateComputerChoice() //generate comp choice function
     getResult() //return results function
